@@ -13,6 +13,8 @@
 		063A32DB2637189900C47212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A32D92637189900C47212 /* Main.storyboard */; };
 		063A32DD2637189A00C47212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063A32DC2637189A00C47212 /* Assets.xcassets */; };
 		063A32E02637189A00C47212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A32DE2637189A00C47212 /* LaunchScreen.storyboard */; };
+		063A32F226371CC200C47212 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 063A32F026371CC200C47212 /* Montserrat-Bold.ttf */; };
+		063A32F326371CC200C47212 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 063A32F126371CC200C47212 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		063A32DC2637189A00C47212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		063A32DF2637189A00C47212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063A32E12637189A00C47212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063A32F026371CC200C47212 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		063A32F126371CC200C47212 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		063A32D22637189900C47212 /* LoopBook */ = {
 			isa = PBXGroup;
 			children = (
+				063A32EA26371BEE00C47212 /* Vistas */,
+				063A32EC26371BFC00C47212 /* Controladores */,
+				063A32E826371B9600C47212 /* Supporting Files */,
+				063A32EE26371C3000C47212 /* Recursos */,
+				063A32DC2637189A00C47212 /* Assets.xcassets */,
+			);
+			path = LoopBook;
+			sourceTree = "<group>";
+		};
+		063A32E826371B9600C47212 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063A32E12637189A00C47212 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		063A32EA26371BEE00C47212 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				063A32D92637189900C47212 /* Main.storyboard */,
+				063A32DE2637189A00C47212 /* LaunchScreen.storyboard */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		063A32EC26371BFC00C47212 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
 				063A32D32637189900C47212 /* AppDelegate.swift */,
 				063A32D52637189900C47212 /* SceneDelegate.swift */,
 				063A32D72637189900C47212 /* ViewController.swift */,
-				063A32D92637189900C47212 /* Main.storyboard */,
-				063A32DC2637189A00C47212 /* Assets.xcassets */,
-				063A32DE2637189A00C47212 /* LaunchScreen.storyboard */,
-				063A32E12637189A00C47212 /* Info.plist */,
 			);
-			path = LoopBook;
+			path = Controladores;
+			sourceTree = "<group>";
+		};
+		063A32EE26371C3000C47212 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				063A32EF26371C3800C47212 /* Fuentes */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
+		063A32EF26371C3800C47212 /* Fuentes */ = {
+			isa = PBXGroup;
+			children = (
+				063A32F026371CC200C47212 /* Montserrat-Bold.ttf */,
+				063A32F126371CC200C47212 /* Montserrat-Regular.ttf */,
+			);
+			path = Fuentes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063A32F226371CC200C47212 /* Montserrat-Bold.ttf in Resources */,
 				063A32E02637189A00C47212 /* LaunchScreen.storyboard in Resources */,
 				063A32DD2637189A00C47212 /* Assets.xcassets in Resources */,
+				063A32F326371CC200C47212 /* Montserrat-Regular.ttf in Resources */,
 				063A32DB2637189900C47212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S82T3W7WRZ;
-				INFOPLIST_FILE = LoopBook/Info.plist;
+				INFOPLIST_FILE = "LoopBook/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RaulDev.LoopBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S82T3W7WRZ;
-				INFOPLIST_FILE = LoopBook/Info.plist;
+				INFOPLIST_FILE = "LoopBook/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RaulDev.LoopBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

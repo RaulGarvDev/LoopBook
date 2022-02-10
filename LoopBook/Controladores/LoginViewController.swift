@@ -8,15 +8,21 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    // MARK: Outlets inicio sesión
 
     @IBOutlet weak var email_TextField: UITextField!
     @IBOutlet weak var contraseña_TextField: UITextField!
     @IBOutlet weak var olvidoContraseña_Boton: UIButton!
     @IBOutlet weak var iniciarSesion_Boton: UIButton!
-    @IBOutlet weak var facebook_login: UIImageView!
-    @IBOutlet weak var gmail_Login: NSLayoutConstraint!
+   
     @IBOutlet weak var registro_Boton: UIButton!
     
+    //MARK: Outlets registro
+    
+    
+    
+    //MARK: Cargar de pantalla
     
     override func viewDidLoad() {
         super.viewDidLoad()

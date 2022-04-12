@@ -22,6 +22,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var facebook_Boton: UIButton!
     @IBOutlet weak var gmail_Boton: UIButton!
     @IBOutlet weak var registro_Boton: UIButton!
+    @IBOutlet weak var stackView1: UIStackView!
+    @IBOutlet weak var stackView2: UIStackView!
+    @IBOutlet weak var stackView3: UIStackView!
     
     
     private var email: String = ""
@@ -41,20 +44,25 @@ class LoginViewController: UIViewController {
         
         //Comprobar la sesión del usuario autentificado
         let defaults = UserDefaults.standard
+        
         if let email = defaults.value(forKey: "email") as? String , let provider = defaults.value(forKey: "provider") as? String{
             
             //Aquí deberiamos implementar y esconder el stackview con todos los elementos
+            stackView1.isHidden = true
+            stackView2.isHidden = true
+            stackView3.isHidden = true
             
             navigationController?.pushViewController(MainViewController(email:email, provider: ProviderType.init(rawValue: provider)!), animated: true)
         }
         
-       
-        
-      
-        
-    }
+        stackView1.isHidden = false
+        stackView2.isHidden = false
+        stackView3.isHidden = false
     
-    @IBAction func iniciar_sesion(_ sender: Any) {
+    
+}
+    
+  @IBAction func iniciar_sesion(_ sender: Any) {
         
         if let email = email_TextField.text, let password = contraseña_TextField.text {
             
@@ -84,22 +92,42 @@ class LoginViewController: UIViewController {
     
     @IBAction func facebook_Login(_ sender: Any) {
     }
+    
+    
     @IBAction func gmail_Login(_ sender: Any) {
+        
         let id = "815236609193-0rl02c98nbard7seaug30n054fvp9ak3.apps.googleusercontent.com"
-             
+      
+        
         let signInConfig = GIDConfiguration.init(clientID: id)
+        
+       
+            
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
-           guard error == nil else { return }
+            guard error == nil else { return }
+            guard let user = user else { return }
 
-           // If sign in succeeded, display the app's main content View.
-            // Falta por hacer
-           
-         }
-
+            let email: String
+            email = user.profile!.email
+            
+            //let password = user.authentication.idToken
+        
+                
+            self.navigationController?.pushViewController(MainViewController(email: email, provider: .gmail), animated: true)
+        }
+            
+            
         
     }
+
+                   
+        
+
+        
+    
     @IBAction func olvidar_Contraseña(_ sender: Any) {
     }
+    
     
     
 }

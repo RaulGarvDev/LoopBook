@@ -20,10 +20,6 @@ import GoogleSignIn
         
        
         //Google sign in
-        
-        
-
-       
        
         func application(
           _ app: UIApplication,

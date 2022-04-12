@@ -22,22 +22,29 @@ class MainViewController: UIViewController {
     
     private let email: String
     private let provider: ProviderType
-    
+
     
     //Constructores
     
     
     
     // init
+
+    
     init(email: String, provider: ProviderType){
         self.email = email
         self.provider = provider
+
         super.init(nibName: nil, bundle: nil)
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+  
+  
     
     
     // Comienza la carga de pantalla
@@ -79,12 +86,13 @@ class MainViewController: UIViewController {
             do {
                 try Auth.auth().signOut()
                 navigationController?.popViewController(animated: true)
+                GIDSignIn.sharedInstance.signOut()
             }catch{
                 //Se ha producido un error
             }
         }
         
-        GIDSignIn.sharedInstance.signOut()
+       
 
     }
     

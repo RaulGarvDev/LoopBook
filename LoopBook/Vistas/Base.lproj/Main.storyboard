@@ -172,6 +172,9 @@
                         <outlet property="iniciarSesion_Boton" destination="Dmv-u7-kvi" id="SMG-wa-jC3"/>
                         <outlet property="olvidoContraseña_Boton" destination="nwu-qk-aGj" id="9mH-6L-ICn"/>
                         <outlet property="registro_Boton" destination="NTC-XJ-X8W" id="xcU-Pb-AgD"/>
+                        <outlet property="stackView1" destination="3Jh-z9-vYr" id="hBp-gb-pmB"/>
+                        <outlet property="stackView2" destination="keP-Zi-NOk" id="gll-e6-LaE"/>
+                        <outlet property="stackView3" destination="4aD-ye-PLH" id="cpO-cg-3Cn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -199,7 +202,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWR-gc-5Ah">
-                                <rect key="frame" x="63" y="246" width="302" height="34"/>
+                                <rect key="frame" x="63" y="246.33333333333337" width="302" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -211,7 +214,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repite tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADT-0j-YjH">
-                                <rect key="frame" x="63" y="330" width="302" height="34"/>
+                                <rect key="frame" x="63" y="330.33333333333331" width="302" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -223,7 +226,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-rX-9te">
-                                <rect key="frame" x="63" y="288" width="302" height="34"/>
+                                <rect key="frame" x="63" y="288.33333333333331" width="302" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -235,13 +238,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu foto de perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSh-fa-906">
-                                <rect key="frame" x="70" y="372" width="288" height="17"/>
+                                <rect key="frame" x="70" y="372.33333333333331" width="288" height="17"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu nombre de usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJa-cU-F6q">
-                                <rect key="frame" x="63" y="204" width="302" height="34"/>
+                                <rect key="frame" x="63" y="204.33333333333334" width="302" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -260,12 +263,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-9B-B5k">
-                                <rect key="frame" x="276" y="404" width="64" height="54"/>
+                                <rect key="frame" x="276" y="404.33333333333331" width="64" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="galeria" buttonSize="large"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hk-ug-Rpb">
-                                <rect key="frame" x="89" y="480" width="251" height="29"/>
+                                <rect key="frame" x="89" y="480.33333333333331" width="251" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="CREAR CUENTA">
@@ -276,7 +279,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-Gv-wO3">
-                                <rect key="frame" x="108" y="404" width="48" height="54"/>
+                                <rect key="frame" x="108" y="404.33333333333331" width="48" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camara" title=""/>
                             </button>

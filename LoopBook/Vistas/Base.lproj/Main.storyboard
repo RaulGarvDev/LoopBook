@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mNL-b7-dPq">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,111 +39,133 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Ahorra, comparte y aprende!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPW-wI-Cyl">
-                                <rect key="frame" x="34.666666666666657" y="168" width="359" height="22"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicia sesión para continuar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-AH-oX9">
-                                <rect key="frame" x="54" y="206" width="320" height="18"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
-                                <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-uO-ihZ">
-                                <rect key="frame" x="50" y="234" width="328" height="34"/>
-                                <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rop-L9-lYl">
-                                <rect key="frame" x="50" y="278" width="328" height="34"/>
-                                <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-u7-kvi">
-                                <rect key="frame" x="75.666666666666686" y="355" width="277" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="INICIAR SESIÓN">
-                                    <color key="titleColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwu-qk-aGj">
-                                <rect key="frame" x="50" y="317" width="328" height="30"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
-                                <state key="normal" title="¿Olvidaste tu  contraseña?">
-                                    <color key="titleColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XzV-Li-un6" kind="show" identifier="Olvidaste tu contraseña" id="tza-7Y-pYR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-ne-2do">
-                                <rect key="frame" x="282" y="395" width="56" height="46"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="gmail"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_loopbook_blanco_big" translatesAutoresizingMaskIntoConstraints="NO" id="o17-HC-x9x">
-                                <rect key="frame" x="123.66666666666669" y="88" width="181" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="181" id="QqL-KW-IUh"/>
-                                    <constraint firstAttribute="height" constant="80" id="tR9-D5-i4P"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-l9-ego">
-                                <rect key="frame" x="90" y="395" width="56" height="46"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="facebook"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-XJ-X8W">
-                                <rect key="frame" x="9.6666666666666572" y="449" width="409" height="30"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
-                                <state key="normal" title="¡Ah! ¿Aún no estas registrado? ¡Pulsa aquí!">
-                                    <color key="titleColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="wum-Rm-ocL" kind="show" identifier="Registro" id="j7y-fA-O0X"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-z9-vYr">
+                                <rect key="frame" x="0.0" y="88" width="428" height="322.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_loopbook_blanco_big" translatesAutoresizingMaskIntoConstraints="NO" id="o17-HC-x9x">
+                                        <rect key="frame" x="114" y="0.0" width="200" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="RI3-cr-YM0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Ahorra, comparte y aprende!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPW-wI-Cyl">
+                                        <rect key="frame" x="80" y="157" width="268.33333333333331" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicia sesión para continuar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-AH-oX9">
+                                        <rect key="frame" x="117.00000000000001" y="186" width="194.33333333333337" height="17.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-uO-ihZ">
+                                        <rect key="frame" x="127" y="210.33333333333331" width="174" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="3Od-WW-2Vn"/>
+                                            <constraint firstAttribute="width" constant="173.66999999999999" id="GNj-u4-y29"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rop-L9-lYl">
+                                        <rect key="frame" x="127.33333333333333" y="251.33333333333331" width="173.66666666666669" height="34"/>
+                                        <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="WtX-un-NgG"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-u7-kvi">
+                                        <rect key="frame" x="159" y="292.33333333333331" width="110" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="INICIAR SESIÓN">
+                                            <color key="titleColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="iniciar_sesion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1X-dD-crD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="keP-Zi-NOk">
+                                <rect key="frame" x="9.6666666666666572" y="464" width="409" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwu-qk-aGj">
+                                        <rect key="frame" x="0.0" y="0.0" width="409" height="30"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                        <state key="normal" title="¿Olvidaste tu  contraseña?">
+                                            <color key="titleColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="olvidar_Contraseña:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3E-Dg-wAI"/>
+                                            <segue destination="XzV-Li-un6" kind="show" identifier="Olvidaste tu contraseña" id="tza-7Y-pYR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-XJ-X8W">
+                                        <rect key="frame" x="0.0" y="30" width="409" height="30"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
+                                        <state key="normal" title="¡Ah! ¿Aún no estas registrado? ¡Pulsa aquí!">
+                                            <color key="titleColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wum-Rm-ocL" kind="show" identifier="Registro" id="j7y-fA-O0X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-ye-PLH">
+                                <rect key="frame" x="104" y="421" width="220" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-ne-2do">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gmail"/>
+                                        <connections>
+                                            <action selector="gmail_Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rO5-QW-QsI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-l9-ego">
+                                        <rect key="frame" x="110" y="0.0" width="110" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="facebook"/>
+                                        <connections>
+                                            <action selector="facebook_Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZc-En-uNR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Rop-L9-lYl" firstAttribute="top" secondItem="2Si-uO-ihZ" secondAttribute="bottom" constant="10" id="20T-0n-wqo"/>
-                            <constraint firstItem="Dmv-u7-kvi" firstAttribute="top" secondItem="nwu-qk-aGj" secondAttribute="bottom" constant="8" symbolic="YES" id="3xj-hU-r8n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rop-L9-lYl" secondAttribute="trailing" constant="50" id="5Yg-ym-CEa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dmv-u7-kvi" secondAttribute="trailing" constant="75.5" id="6pT-4g-BAw"/>
-                            <constraint firstItem="Nlb-l9-ego" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="77Y-PJ-cMu"/>
-                            <constraint firstItem="yPW-wI-Cyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34.5" id="83Y-aA-isp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPW-wI-Cyl" secondAttribute="trailing" constant="34.5" id="8cf-Xg-N35"/>
-                            <constraint firstItem="Rop-L9-lYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="9tr-Tu-WQb"/>
-                            <constraint firstItem="2Si-uO-ihZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="F6M-oM-Bqu"/>
-                            <constraint firstItem="yPW-wI-Cyl" firstAttribute="top" secondItem="o17-HC-x9x" secondAttribute="bottom" id="MvQ-q6-mE8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Si-uO-ihZ" secondAttribute="trailing" constant="50" id="Ri5-95-C7J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ceo-ne-2do" secondAttribute="trailing" constant="90" id="Tik-ud-GKK"/>
-                            <constraint firstItem="2Si-uO-ihZ" firstAttribute="top" secondItem="uIE-AH-oX9" secondAttribute="bottom" constant="10" id="U44-9b-fXJ"/>
-                            <constraint firstItem="ceo-ne-2do" firstAttribute="top" secondItem="Dmv-u7-kvi" secondAttribute="bottom" constant="10" id="YN0-HD-ULj"/>
-                            <constraint firstItem="NTC-XJ-X8W" firstAttribute="top" secondItem="ceo-ne-2do" secondAttribute="bottom" constant="8" symbolic="YES" id="YaW-Qj-S1e"/>
-                            <constraint firstItem="nwu-qk-aGj" firstAttribute="top" secondItem="Rop-L9-lYl" secondAttribute="bottom" constant="5" id="ZUm-A6-FxO"/>
-                            <constraint firstItem="Nlb-l9-ego" firstAttribute="top" secondItem="Dmv-u7-kvi" secondAttribute="bottom" constant="10" id="amc-wS-H3o"/>
-                            <constraint firstItem="Dmv-u7-kvi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75.5" id="bC7-nh-Yuj"/>
-                            <constraint firstItem="NTC-XJ-X8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9.5" id="bwU-yb-p9G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nwu-qk-aGj" secondAttribute="trailing" constant="50" id="eEo-n2-R35"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTC-XJ-X8W" secondAttribute="trailing" constant="9.5" id="eME-rW-xgS"/>
-                            <constraint firstItem="nwu-qk-aGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="hTb-gJ-8iu"/>
-                            <constraint firstItem="uIE-AH-oX9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="mpp-31-4nD"/>
-                            <constraint firstItem="ceo-ne-2do" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nlb-l9-ego" secondAttribute="trailing" constant="8" symbolic="YES" id="nU6-JU-PVL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIE-AH-oX9" secondAttribute="trailing" constant="54" id="ru5-kN-eKy"/>
-                            <constraint firstItem="uIE-AH-oX9" firstAttribute="top" secondItem="yPW-wI-Cyl" secondAttribute="bottom" constant="16" id="uaG-cZ-ssa"/>
-                            <constraint firstItem="o17-HC-x9x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wYo-me-czi"/>
-                            <constraint firstItem="o17-HC-x9x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wul-Fj-LuN"/>
+                            <constraint firstItem="keP-Zi-NOk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9.5" id="46m-6y-usC"/>
+                            <constraint firstItem="3Jh-z9-vYr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5B7-KJ-YqT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Jh-z9-vYr" secondAttribute="trailing" id="7fH-MH-tmW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="keP-Zi-NOk" secondAttribute="trailing" constant="9.5" id="Sw6-iC-P4R"/>
+                            <constraint firstItem="keP-Zi-NOk" firstAttribute="top" secondItem="3Jh-z9-vYr" secondAttribute="bottom" constant="53.5" id="fsi-MF-UV1"/>
+                            <constraint firstItem="4aD-ye-PLH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="jNd-z2-WWz"/>
+                            <constraint firstItem="3Jh-z9-vYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jiN-ng-1Mn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aD-ye-PLH" secondAttribute="trailing" constant="104" id="ynG-td-ej9"/>
+                            <constraint firstItem="4aD-ye-PLH" firstAttribute="top" secondItem="3Jh-z9-vYr" secondAttribute="bottom" constant="10.5" id="zvo-rF-9RK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login " id="ctB-mD-0JW"/>
+                    <navigationItem key="navigationItem" title="Login " id="ctB-mD-0JW" userLabel="Login"/>
                     <connections>
                         <outlet property="contraseña_TextField" destination="Rop-L9-lYl" id="l8V-mJ-cwY"/>
                         <outlet property="email_TextField" destination="2Si-uO-ihZ" id="GLd-3E-mEm"/>
@@ -155,12 +176,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95.625" y="65"/>
+            <point key="canvasLocation" x="151.875" y="67.5"/>
         </scene>
         <!--Registro-->
         <scene sceneID="vVb-Eh-Zvu">
             <objects>
-                <viewController id="wum-Rm-ocL" sceneMemberID="viewController">
+                <viewController id="wum-Rm-ocL" customClass="Registro" customModule="LoopBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3tR-84-qm1">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +193,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Es hora de registrarse!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfH-4x-enO">
-                                <rect key="frame" x="96" y="177" width="236" height="18.333333333333343"/>
+                                <rect key="frame" x="96" y="177" width="236" height="18.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -183,6 +204,11 @@
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repite tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADT-0j-YjH">
                                 <rect key="frame" x="63" y="330" width="302" height="34"/>
@@ -190,6 +216,11 @@
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-rX-9te">
                                 <rect key="frame" x="63" y="288" width="302" height="34"/>
@@ -197,9 +228,14 @@
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona tu foto de perfil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSh-fa-906">
-                                <rect key="frame" x="70" y="372" width="288" height="18"/>
+                                <rect key="frame" x="70" y="372" width="288" height="17"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -210,6 +246,11 @@
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_loopbook_blanco_big" translatesAutoresizingMaskIntoConstraints="NO" id="1Qi-xZ-53R">
                                 <rect key="frame" x="64" y="88" width="300" height="53"/>
@@ -219,20 +260,23 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-9B-B5k">
-                                <rect key="frame" x="276" y="405" width="64" height="54"/>
+                                <rect key="frame" x="276" y="404" width="64" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="galeria" buttonSize="large"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hk-ug-Rpb">
-                                <rect key="frame" x="89" y="481" width="251" height="29"/>
+                                <rect key="frame" x="89" y="480" width="251" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="CREAR CUENTA">
                                     <color key="titleColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="registrarUsuarioFirebase:" destination="wum-Rm-ocL" eventType="touchUpInside" id="c5z-4H-dBq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-Gv-wO3">
-                                <rect key="frame" x="108" y="405" width="48" height="54"/>
+                                <rect key="frame" x="108" y="404" width="48" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camara" title=""/>
                             </button>
@@ -275,6 +319,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="vic-cM-fZu"/>
+                    <connections>
+                        <outlet property="camara_Boton" destination="JRK-Gv-wO3" id="f2m-Gy-6Gy"/>
+                        <outlet property="contraseña_TextField" destination="ULA-rX-9te" id="jED-Y5-KGC"/>
+                        <outlet property="crearCuenta_Boton" destination="7hk-ug-Rpb" id="Mwn-C8-V4O"/>
+                        <outlet property="email_TextField" destination="uWR-gc-5Ah" id="VAL-fw-F5X"/>
+                        <outlet property="galeria_Boton" destination="MfV-9B-B5k" id="Wdz-qC-sX3"/>
+                        <outlet property="nombreUsuario_TextField" destination="vJa-cU-F6q" id="PyH-b7-ix8"/>
+                        <outlet property="repiteContraseña_TextField" destination="ADT-0j-YjH" id="E8w-Zs-jrc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5Z-r4-j0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,7 +336,7 @@
         <!--Olvidaste tu contraseña-->
         <scene sceneID="cI7-ed-3tG">
             <objects>
-                <viewController id="XzV-Li-un6" sceneMemberID="viewController">
+                <viewController id="XzV-Li-un6" customClass="CambioContraseña" customModule="LoopBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Hk-Ek-g0S">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,20 +351,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce el email asociado a tu cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-yz-jmA">
-                                <rect key="frame" x="10" y="296" width="398" height="14.666666666666686"/>
+                                <rect key="frame" x="10" y="296" width="398" height="15"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="IntroduceTuemail_TextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email " clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iN7-E5-iwF">
-                                <rect key="frame" x="50" y="320.66666666666669" width="328" height="34"/>
+                                <rect key="frame" x="50" y="321" width="328" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="email_TextField:" destination="cce-jW-edn" eventType="editingDidEnd" id="kdY-yY-9Nb"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-fY-0hg">
-                                <rect key="frame" x="80" y="364.66666666666669" width="268" height="29"/>
+                                <rect key="frame" x="80" y="365" width="268" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
@@ -319,7 +380,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Una vez introducido recibirás las instrucciones para cambiar la contraseña via email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iu-Lh-fWw">
-                                <rect key="frame" x="30" y="413.66666666666669" width="368" height="32"/>
+                                <rect key="frame" x="30" y="414" width="368" height="32"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -349,8 +410,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Olvidaste tu contraseña" id="0pn-rP-w13"/>
+                    <connections>
+                        <outlet property="cambiarContraseña_Boton" destination="LyI-fY-0hg" id="cHe-72-peE"/>
+                        <outlet property="email_TextField" destination="iN7-E5-iwF" id="EBa-tR-aYV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UH-tR-upU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cce-jW-edn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="581.25" y="921.25"/>
         </scene>

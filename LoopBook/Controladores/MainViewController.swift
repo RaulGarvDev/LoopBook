@@ -8,11 +8,9 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
+import FBSDKLoginKit
+import FacebookLogin
 
-enum ProviderType: String {
-    case basic
-    case gmail
-}
 
 class MainViewController: UIViewController {
     
@@ -51,13 +49,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Do any additional setup after loading the view.
         
         title = "Inicio"
         
         navigationItem.setHidesBackButton(true, animated: false)
         
-        
+     
         email_TextField.text = email
         providerLabel.text = provider.rawValue
         
@@ -82,14 +82,16 @@ class MainViewController: UIViewController {
         
         
         switch provider {
-        case .basic, .gmail:
+        case .basic, .gmail, .facebook:
             do {
-                try Auth.auth().signOut()
-                navigationController?.popViewController(animated: true)
-                GIDSignIn.sharedInstance.signOut()
-            }catch{
-                //Se ha producido un error
-            }
+                try
+                    Auth.auth().signOut()
+                    navigationController?.popViewController(animated: true)
+                    GIDSignIn.sharedInstance.signOut()
+                    LoginManager().logOut()
+                }catch{
+                    //Se ha producido un error
+                }
         }
         
        
@@ -97,6 +99,16 @@ class MainViewController: UIViewController {
     }
     
     
-    
-    
 }//Fin MainViewController
+
+//MARK: Extras
+
+   enum ProviderType: String {
+        case basic
+        case gmail
+        case facebook
+    
+}
+
+
+

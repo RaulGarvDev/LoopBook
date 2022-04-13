@@ -9,6 +9,8 @@ import UIKit
 import FirebaseAuth
 import FirebaseAnalytics
 import GoogleSignIn
+import FacebookLogin
+
 
 class LoginViewController: UIViewController {
     
@@ -58,7 +60,8 @@ class LoginViewController: UIViewController {
         stackView1.isHidden = false
         stackView2.isHidden = false
         stackView3.isHidden = false
-    
+        
+      
     
 }
     
@@ -91,6 +94,29 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func facebook_Login(_ sender: Any) {
+       let loginManager = LoginManager()
+        loginManager.logOut()
+        loginManager.logIn(permissions: [.email], viewController: self) { (result) in
+            
+            switch result {
+                
+            case .success(granted: let granted, declined: let declined, token: let token):
+                
+                let token2 = token?.tokenString
+                let credential = FacebookAuthProvider.credential(withAccessToken: token!.tokenString)
+              
+                Auth.auth().signIn(with:  credential ) { (result, error) in
+                    self.navigationController?.pushViewController(MainViewController(email: token2!, provider: .facebook), animated: true)
+                }
+                      
+                
+            case .cancelled:
+                break
+            case .failed(_):
+                break
+                //popup
+            }
+        }
     }
     
     
@@ -110,9 +136,6 @@ class LoginViewController: UIViewController {
             let email: String
             email = user.profile!.email
             
-            //let password = user.authentication.idToken
-        
-                
             self.navigationController?.pushViewController(MainViewController(email: email, provider: .gmail), animated: true)
         }
             

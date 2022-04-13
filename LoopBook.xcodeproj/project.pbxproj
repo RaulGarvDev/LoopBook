@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06005FA42807481D008F66F9 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 06005FA32807481D008F66F9 /* FacebookCore */; };
+		06005FA62807481D008F66F9 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 06005FA52807481D008F66F9 /* FacebookLogin */; };
 		063A32D42637189900C47212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A32D32637189900C47212 /* AppDelegate.swift */; };
 		063A32D62637189900C47212 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A32D52637189900C47212 /* SceneDelegate.swift */; };
 		063A32D82637189900C47212 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063A32D72637189900C47212 /* LoginViewController.swift */; };
@@ -51,8 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06005FA62807481D008F66F9 /* FacebookLogin in Frameworks */,
 				0673771F27C02A1F00FEB78A /* FirebaseMessaging in Frameworks */,
 				0673771D27C02A1F00FEB78A /* FirebaseDatabase in Frameworks */,
+				06005FA42807481D008F66F9 /* FacebookCore in Frameworks */,
 				0673771927C02A1F00FEB78A /* FirebaseAnalytics in Frameworks */,
 				0673772127C02A1F00FEB78A /* FirebaseStorage in Frameworks */,
 				0673771B27C02A1F00FEB78A /* FirebaseAuth in Frameworks */,
@@ -171,6 +175,8 @@
 				0673771E27C02A1F00FEB78A /* FirebaseMessaging */,
 				0673772027C02A1F00FEB78A /* FirebaseStorage */,
 				06B8F2522804AAC6004481C1 /* GoogleSignIn */,
+				06005FA32807481D008F66F9 /* FacebookCore */,
+				06005FA52807481D008F66F9 /* FacebookLogin */,
 			);
 			productName = LoopBook;
 			productReference = 063A32D02637189900C47212 /* LoopBook.app */;
@@ -202,6 +208,7 @@
 			packageReferences = (
 				0673771727C02A1F00FEB78A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				06B8F2512804AAC6004481C1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				06005FA22807481C008F66F9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 063A32D12637189900C47212 /* Products */;
 			projectDirPath = "";
@@ -445,6 +452,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		06005FA22807481C008F66F9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		0673771727C02A1F00FEB78A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -464,6 +479,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		06005FA32807481D008F66F9 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06005FA22807481C008F66F9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		06005FA52807481D008F66F9 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06005FA22807481C008F66F9 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
 		0673771827C02A1F00FEB78A /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0673771727C02A1F00FEB78A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

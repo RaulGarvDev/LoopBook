@@ -3,4 +3,54 @@
    uuid = "910BED0B-CAE1-477E-8BBE-DE20ED9B6A90"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F8E2124-90F8-47E7-AE31-A1A001E28BB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoopBook/Controladores/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "9F8E2124-90F8-47E7-AE31-A1A001E28BB4 - 3432396180a0f6fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static LoopBook.AppDelegate.$main() -&gt; ()"
+                  moduleName = "LoopBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raulgonzalezdelaalejaruizvaldepenas/Swift/LoopBook/LoopBook/Controladores/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "9F8E2124-90F8-47E7-AE31-A1A001E28BB4 - 9dafe08ced51a063"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "LoopBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raulgonzalezdelaalejaruizvaldepenas/Swift/LoopBook/LoopBook/Controladores/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "11">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

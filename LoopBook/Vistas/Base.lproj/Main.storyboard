@@ -381,6 +381,9 @@
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
                                     <color key="titleColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="cambiarContraseña:" destination="XzV-Li-un6" eventType="touchUpInside" id="tAy-JW-Ai9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Una vez introducido recibirás las instrucciones para cambiar la contraseña via email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iu-Lh-fWw">
                                 <rect key="frame" x="30" y="414" width="368" height="32"/>

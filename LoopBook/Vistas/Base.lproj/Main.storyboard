@@ -61,11 +61,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-uO-ihZ">
-                                        <rect key="frame" x="127" y="210.33333333333331" width="174" height="34"/>
+                                        <rect key="frame" x="127.66666666666669" y="210.33333333333331" width="173" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="3Od-WW-2Vn"/>
-                                            <constraint firstAttribute="width" constant="173.66999999999999" id="GNj-u4-y29"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="y2W-m0-0XO"/>
                                         </constraints>
                                         <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
@@ -80,7 +79,7 @@
                                         <rect key="frame" x="127.33333333333333" y="251.33333333333331" width="173.66666666666669" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="WtX-un-NgG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="MjP-ZM-x7e"/>
                                         </constraints>
                                         <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
@@ -92,8 +91,11 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmv-u7-kvi">
-                                        <rect key="frame" x="159" y="292.33333333333331" width="110" height="30"/>
+                                        <rect key="frame" x="151.66666666666666" y="292.33333333333331" width="124.99999999999997" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="GGn-VC-MVK"/>
+                                        </constraints>
                                         <state key="normal" title="INICIAR SESIÓN">
                                             <color key="titleColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -179,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151.875" y="67.5"/>
+            <point key="canvasLocation" x="151.4018691588785" y="67.386609071274307"/>
         </scene>
         <!--Registro-->
         <scene sceneID="vVb-Eh-Zvu">
@@ -354,13 +356,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduce el email asociado a tu cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-yz-jmA">
-                                <rect key="frame" x="10" y="296" width="398" height="15"/>
+                                <rect key="frame" x="10" y="296" width="398" height="14"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="IntroduceTuemail_TextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email " clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iN7-E5-iwF">
-                                <rect key="frame" x="50" y="321" width="328" height="34"/>
+                                <rect key="frame" x="50" y="320" width="328" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.031372549020000001" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
@@ -375,7 +377,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-fY-0hg">
-                                <rect key="frame" x="80" y="365" width="268" height="29"/>
+                                <rect key="frame" x="80" y="364" width="268" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.64313725489999995" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="CAMBIAR CONTRASEÑA">
@@ -386,7 +388,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Una vez introducido recibirás las instrucciones para cambiar la contraseña via email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Iu-Lh-fWw">
-                                <rect key="frame" x="30" y="414" width="368" height="32"/>
+                                <rect key="frame" x="30" y="413" width="368" height="32"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

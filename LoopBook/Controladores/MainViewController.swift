@@ -17,10 +17,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var email_TextField: UILabel!
     @IBOutlet weak var cerrarSesion_Button: UIButton!
     @IBOutlet weak var providerLabel: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
     
     private let email: String
     private let provider: ProviderType
-
+    private let imagenUrl : URL!
     
     //Constructores
     
@@ -30,6 +31,19 @@ class MainViewController: UIViewController {
 
     
     init(email: String, provider: ProviderType){
+        self.imagenUrl = nil
+        self.email = email
+        self.provider = provider
+
+        super.init(nibName: nil, bundle: nil)
+        
+    }
+    
+   
+    
+    init(email: String, provider: ProviderType, imagenUrl: URL){
+        
+        self.imagenUrl = imagenUrl
         self.email = email
         self.provider = provider
 
@@ -42,13 +56,28 @@ class MainViewController: UIViewController {
     }
     
   
-  
-    
     
     // Comienza la carga de pantalla
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Carga de foto según proveedor
+        
+        switch provider{
+            
+        case .basic: break
+        case .facebook:
+            
+            let profilePictureView = FBProfilePictureView()
+            profilePictureView.frame = imagen.frame
+            profilePictureView.profileID = AccessToken.current!.userID
+            self.view.addSubview(profilePictureView)
+            
+        case .gmail:
+            
+            imagen.load(url: imagenUrl)
+           
+        }
         
         
         // Do any additional setup after loading the view.
@@ -108,6 +137,20 @@ class MainViewController: UIViewController {
         case gmail
         case facebook
     
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
 
 

@@ -10,6 +10,7 @@ import FirebaseAuth
 import FirebaseAnalytics
 import GoogleSignIn
 import FacebookLogin
+import FBSDKLoginKit
 
 
 class LoginViewController: UIViewController {
@@ -43,6 +44,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
         
         //Comprobar la sesión del usuario autentificado
         let defaults = UserDefaults.standard
@@ -98,17 +101,40 @@ class LoginViewController: UIViewController {
         loginManager.logOut()
         loginManager.logIn(permissions: [.email], viewController: self) { (result) in
             
+            
             switch result {
                 
             case .success(granted: let granted, declined: let declined, token: let token):
                 
-                let token2 = token?.tokenString
-                let credential = FacebookAuthProvider.credential(withAccessToken: token!.tokenString)
-              
-                Auth.auth().signIn(with:  credential ) { (result, error) in
-                    self.navigationController?.pushViewController(MainViewController(email: token2!, provider: .facebook), animated: true)
-                }
+               /* let profilePictureView = FBProfilePictureView()
+                profilePictureView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+                profilePictureView.profileID = AccessToken.current!.userID
+                self.view.addSubview(profilePictureView)*/
+                
+                let granted2 = granted.description
+                let declined2 = declined.description
+               
+                
+                print(("\(granted2)", "\(declined2)"))
+                
+                Profile.loadCurrentProfile { profile, error in
+                
+                
+                    let cogerEmail = profile?.email
+                    
+                 
+                  
+                   // let token2 = token?.userID
+                    let credential = FacebookAuthProvider.credential(withAccessToken: token!.tokenString)
+                    
+                
+                    Auth.auth().signIn(with:  credential ) { (result, error) in
+                        self.navigationController?.pushViewController(MainViewController(email: cogerEmail!, provider: .facebook), animated: true)
+                        
+                       
                       
+                    }
+                }
                 
             case .cancelled:
                 break
@@ -125,6 +151,7 @@ class LoginViewController: UIViewController {
         let id = "815236609193-0rl02c98nbard7seaug30n054fvp9ak3.apps.googleusercontent.com"
       
         
+        
         let signInConfig = GIDConfiguration.init(clientID: id)
         
        
@@ -135,8 +162,10 @@ class LoginViewController: UIViewController {
 
             let email: String
             email = user.profile!.email
+            let profilePicUrl = user.profile?.imageURL(withDimension: 320)
+           
             
-            self.navigationController?.pushViewController(MainViewController(email: email, provider: .gmail), animated: true)
+            self.navigationController?.pushViewController(MainViewController(email: email, provider: .gmail, imagenUrl: profilePicUrl!), animated: true)
         }
             
             
